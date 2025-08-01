@@ -33,17 +33,18 @@
       z-index: 1;
     }
     .profile-pic:before {
-      content: "";
-      background: var(--cd-image);
-      position: absolute;
-      top: 10px;
-      left: -15px;
-      width: 130px;
-      height: 130px;
-      background-repeat: no-repeat;
-      z-index: -2;
-      animation: spin 5000ms linear infinite;
-      transition: left ease 0.5s;
+    content: "";
+    background: var(--cd-image) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    width: 130px;
+    height: 130px;
+    z-index: -2;
+    animation: spin 5000ms linear infinite;
+    transition: left 0.5s ease;
+    border-radius: 50%; /* <--- Добавь это */
     }
     .profile-pic:hover:before { left: -60px; }
     @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
