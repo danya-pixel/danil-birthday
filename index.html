@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🎉 Данил приглашает на ДР 🎉</title>
+  <meta charset="UTF-8">
+  <style>
+    /* Music layout by Valentine */
+    :root { --cd-image: url('https://fluorescent-lights.neocities.org/Digital-CD-Disk-Vector-Transparent-PNG.png'); }
+    .profile-pic {
+      position: relative;
+      width: 140px; /* reduced container width */
+      filter: drop-shadow(0 0 0.25rem gray);
+      margin: 20px auto;
+      z-index: 0;
+    }
+    .profile-pic img {
+      width: 120px; /* smaller face image */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border: 2px solid #00FFFF;
+      border-radius: 10px;
+    }
+    .profile-pic:after {
+      content: "";
+      background: url('https://fluorescent-lights.neocities.org/f0rzNHe.png'), linear-gradient(150deg, rgba(255,255,255,0.4), rgba(255,255,255,0.2) 40%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.6));
+      background-size: contain, cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .profile-pic:before {
+      content: "";
+      background: var(--cd-image);
+      position: absolute;
+      top: 10px;
+      left: -15px;
+      width: 130px;
+      height: 130px;
+      background-repeat: no-repeat;
+      z-index: -2;
+      animation: spin 5000ms linear infinite;
+      transition: left ease 0.5s;
+    }
+    .profile-pic:hover:before { left: -60px; }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* Y2K floating decorations */
+    .y2k-deco {
+      position: fixed;
+      z-index: 1000;
+      pointer-events: none;
+      animation: float 6s ease-in-out infinite;
+    }
+    .y2k-deco:nth-child(odd) { animation-delay: -3s; }
+    .y2k-deco:nth-child(3n) { animation-delay: -1.5s; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+    }
+    .y2k-deco img {
+      max-width: 80px;
+      height: auto;
+      filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));
+    }
+
+    /* Core styling */
+    body { margin: 0; padding: 0;
+      background: url('https://i.gifer.com/7VE.gif') repeat #000;
+      font-family: 'Comic Sans MS', cursive; color: #FF69B4;
+      text-align: center; overflow-x: hidden;
+    }
+    @keyframes blink-animation { 0%,100% {opacity:1;} 50% {opacity:0;} }
+    h1 { font-size:52px; color:#FFD700; text-shadow:0 0 15px magenta; margin:20px 0; animation:blink-animation 2s infinite; }
+    h2 { font-size:34px; color:#7CFC00; text-shadow:1px 1px #0000FF; margin:10px 0; }
+    h3 { font-size:24px; color:#00FFFF; margin:10px 0; }
+    .container { background:rgba(0,0,0,0.8); margin:20px auto; padding:25px; width:92%; border:4px dashed #FF00FF; box-shadow:0 0 25px #FF1493; }
+    .gif-row { display:flex; justify-content:center; gap:15px; flex-wrap:wrap; margin:15px 0; }
+    .gif-row img { height:260px; border:2px solid #00FFFF; border-radius:5px; }
+    marquee.main { font-size:30px; background:#FF4500; color:#FFFF00; padding:12px; border:4px double #00FF00; }
+    .anime-bars { display:flex; justify-content:center; flex-wrap:wrap; gap:5px; margin:10px 0; border-top:3px solid #FF00FF; border-bottom:3px solid #FF00FF; padding:5px 0; background:rgba(255,20,147,0.4); }
+    .anime-bars img { height:50px; margin:0 3px; }
+    a { color:#00FFFF; font-size:20px; font-weight:bold; text-decoration:underline; }
+    .music-section { position: relative; z-index: 2; margin: 30px 0; }
+    .music-button { font-size:40px; padding:20px 50px; background:linear-gradient(45deg,#FF00FF,#FFFF00); color:#000; border:5px groove #FFF; cursor:pointer; box-shadow:0 0 25px #FFFF00; animation:blink-animation 3s infinite; }
+    .small-block { font-size:10px; color:#AAA; margin-top:20px; font-style:italic; }
+    .footer { margin:30px 0; font-size:12px; color:#888; }
+  </style>
+</head>
+<body>
+
+  <marquee class="main" behavior="alternate" scrollamount="12">🚀 DANIL'S OVERLOADED BIRTHDAY ZONE 🚀</marquee>
+
+  <h1>💥 ПРИГЛАШЕНИЕ НА ДЕНЬ РОЖДЕНИЯ 💥</h1>
+
+  <div class="general-about">
+    <div class="profile-pic">
+      <img src="https://file.garden/aIyvJyj8KjNwLJtX/photo_2025-08-01%2015.44.38.jpeg" alt="Profile">
+    </div>
+    
+   
+  </div>
+
+  
+
+  <div class="music-section">
+    <button class="music-button" onclick="document.getElementById('party-audio').play()">▶️ Запустить трек!</button>
+    <audio id="party-audio">
+      <source src="https://file.garden/aIyvJyj8KjNwLJtX/Party%2BDon%2Bt%2BStop%2B-%2BDarren%2BStyles%2Bx%2BDougal%2B%2B%2BGammer.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="container">
+    <div class="gif-row">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzBrMmdlcWl0bTE1YjJvcjdqNHZxOHJrcXZlOTlwNGVmYmwzdjJoaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hKyiTWItEy7AOHraAL/giphy.gif" alt="Boom">
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWV4czJoN3k2aWhvNWxmbDAyanhlYW44cnNyMG03MmtidGl0Y211dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nwtSklJSe6eUKsVBSN/giphy.gif" alt="Fire">
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3dqajd4anhkZDJoZDE5cmcyYm41NXJ6MXhxaG51MWliZTdxeXJ5YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GdRG4WHGgmNTq/giphy.gif" alt="Cat Dance">
+    </div>
+
+    <h2>📅 Когда? — <span style="color:#FF1493;">8 августа в 19:00</span></h2>
+    
+
+    <h2>📍 Где? — Разгадай шифр</h2>
+    <p>🔒 Улица: та, что рядом с рекой и рыбной лавкой.<br>🔒 Дом+Квартира: <b>1К1</b>.<br>💡 Подсказка: Zarechnaya 😉</p>
+    
+    <div style="text-align: center; margin: 15px 0;">
+      <img src="https://external-media.spacehey.net/media/sKgOr2FvNRc11FnH7owNsGtrYI6eJq4PKUD41jG-G7Cs=/https://popteamepic.carrd.co/assets/images/gallery06/e26b0e0d.gif?v10408301085951" alt="Y2K" style="max-width: 80px; height: auto; margin: 0 5px;">
+    </div>
+
+    <h3>🎊 Обещаю лимонад, гифки и полный фейерверк! 🎊</h3>
+    
+    <!-- More Y2K decorations -->
+    <div style="text-align: center; margin: 10px 0;">
+      <img src="https://external-media.spacehey.net/media/sjGMgz199NE39AGc_iLrasSp4vEbWDVPUDU0fQncOuO8=/https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2e5e5466-a049-4e6e-8cbc-8e6da6890c41/dfj0b6r-d5d87f13-c50f-4b6e-8785-3f307d404291.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJlNWU1NDY2LWEwNDktNGU2ZS04Y2JjLThlNmRhNjg5MGM0MVwvZGZqMGI2ci1kNWQ4N2YxMy1jNTBmLTRiNmUtODc4NS0zZjMwN2Q0MDQyOTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KkVzaiVOqrS8dzNJhP4Ih-K1raK-bhVdd265PD1lrgg" alt="Y2K" style="max-width: 70px; height: auto; margin: 0 3px;">
+      <img src="https://external-media.spacehey.net/media/sjgYACi_shwbZLfs91IvL9-OCeVOeb40qKoCesp-egd8=/https://kopawz.neocities.org/stamphoard/stamps/silly.jpg" alt="Y2K" style="max-width: 70px; height: auto; margin: 0 3px;">
+      <img src="https://external-media.spacehey.net/media/sgRQMqCgeM6XNsgoZXaYWFyci3ccLI9NrjO3gX-mwkwY=/https://64.media.tumblr.com/5965be658d5e0814f92c95be73ea70e4/661971a88f794150-03/s100x200/9d594f411e8fb166cdfee1232ace62d11777716a.gifv" alt="Y2K" style="max-width: 70px; height: auto; margin: 0 3px;">
+    </div>
+
+    <div class="gif-row">
+      <img src="https://media.tenor.com/vYgk2QkJ2jMAAAAM/computer-school.gif" alt="fireworks">
+      <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="disco ball">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGpmOXBqMjZjajllY2VhdDAxNGV2NmtjZ2ZkNW54ODV5cDd5MTl6cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NIQukcLkdno9O3j9dc/giphy.gif" alt="dancing bear">
+    </div>
+
+    <h3>👉 <a href="wishlist.html">Заглянуть в вишлист 🎁</a></h3>
+    
+    <!-- Y2K decorations around wishlist link -->
+    <div style="text-align: center; margin: 15px 0;">
+      <!-- <img src="https://external-media.spacehey.net/media/sXCfNzb7iBgk-V4a8BZ0nWKlwEXXTuH2Zi-KkXaMCGHA=/https://64.media.tumblr.com/b0b8182e3216c710e5c4d2251201af49/6b04e5cc25ed8963-77/s100x200/63de893bf365135885218ff124e4b0b124f29a6e.gifv" alt="Y2K" style="max-width: 60px; height: auto; margin: 0 5px;"> -->
+      <img src="https://external-media.spacehey.net/media/syGZspuVh0S_ovGI5Bog7rkU7t8EcgxnygCKWgZYeToo=/https://64.media.tumblr.com/29199047dad7240b3d860d79b3e829a0/tumblr_pshg1kNmZq1xzybrpo5_100.png" alt="Y2K" style="max-width: 60px; height: auto; margin: 0 5px;">
+      <img src="https://external-media.spacehey.net/media/sH2vmjVruWHi4GIKZHEMGdwl3jecw-FlRFzqMKremS2M=/https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/28fb1909-cb86-4358-8ace-2ffee1c86b60/d29nol9-0021170a-670f-4b93-a05d-04af59c85486.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4ZmIxOTA5LWNiODYtNDM1OC04YWNlLTJmZmVlMWM4NmI2MFwvZDI5bm9sOS0wMDIxMTcwYS02NzBmLTRiOTMtYTA1ZC0wNGFmNTljODU0ODYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.kLZmugziKtUwM-kFi2_Ir0A3XcM2sWcF1tkBG3ygNDU" alt="Y2K" style="max-width: 60px; height: auto; margin: 0 5px;">
+    </div>
+
+    <div class="small-block">
+      * Ваш браузер стар сегодня? Позовите друга с IE6! 😉
+    </div>
+    
+    <!-- Y2K decorations in footer area -->
+    <div style="text-align: center; margin: 10px 0;">
+      <img src="https://external-media.spacehey.net/media/sHh16Bnsm_pwffnW9_LkU4KybPD5G4w5QeoR7Yc0mnC0=/https://shishka.neocities.org/shishka/img/stamps/36.gif" alt="Y2K" style="max-width: 50px; height: auto; margin: 0 3px;">
+      <img src="https://external-media.spacehey.net/media/so-hMAPJC6oakMjOE5z3G-gUyrH-732atEWCcmyQiI4M=/https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/888e5b5d-b3f5-4252-ae12-7676f7a1d7bc/d1od0yj-472cbad7-2ea1-422b-bbc5-5b827e384248.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4OGU1YjVkLWIzZjUtNDI1Mi1hZTEyLTc2NzZmN2ExZDdiY1wvZDFvZDB5ai00NzJjYmFkNy0yZWExLTQyMmItYmJjNS01YjgyN2UzODQyNDguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YtrwjAfbEOMJSCoIyeQ8oPiA3id9-f1ZjJMEshTp0BI" alt="Y2K" style="max-width: 50px; height: auto; margin: 0 3px;">
+      <img src="https://external-media.spacehey.net/media/sChYnU8GHKlIYGssz__prqiblSR6tyseBF1Yup-uhwko=/https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/0ea075a2-c302-41ab-b1af-124a52b187a6/d1183yn-3d1547c8-c1f5-49ed-adf3-fd63abcc231d.gif" alt="Y2K" style="max-width: 50px; height: auto; margin: 0 3px;">
+    </div>
+
+    <div class="footer">
+      <p>© 2005-2025 DanilCorp. All glitter reserved.</p>
+    </div>
+  </div>
+
+  
+</body>
+</html>

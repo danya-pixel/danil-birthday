@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>🎁 Вишлист Данила 🎁</title>
+  <style>
+    /* 2000s Overload Wishlist */
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      background-image: url('https://www.transparenttextures.com/patterns/brick-wall.png');
+      color: #00FFCC;
+      font-family: 'Comic Sans MS', Impact, fantasy;
+      text-align: center;
+    }
+    marquee.title {
+      font-size: 32px;
+      color: #FF00FF;
+      background: #0000FF;
+      padding: 8px;
+      border: 3px dashed #FFFF00;
+    }
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      background: rgba(0,0,0,0.85);
+      border: 5px double hotpink;
+      padding: 20px;
+      box-shadow: 0 0 20px #FF1493;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .item {
+      background: rgba(255,255,0,0.1);
+      border: 2px groove #00FFFF;
+      width: 180px;
+      padding: 10px;
+      box-shadow: 0 0 10px #00FFFF;
+      position: relative;
+      animation: wiggle 3s ease-in-out infinite;
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #FF69B4;
+      margin-bottom: 8px;
+    }
+    h2 {
+      margin: 10px 0;
+      font-size: 24px;
+      color: #FF1493;
+      text-shadow: 1px 1px #000000;
+    }
+    p.desc {
+      font-size: 14px;
+      color: #CCFF00;
+      margin: 5px 0;
+    }
+    @keyframes wiggle {
+      0%,100% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      75% { transform: rotate(-2deg); }
+    }
+    .note {
+      font-size: 12px;
+      color: #888;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <marquee class="title" behavior="alternate" scrollamount="10">🎉 Вишлист Данила (Меня) 🎉</marquee>
+  <div class="container">
+    <h2>Что я хочу...</h2>
+    <div class="grid">
+      <div class="item">
+        <img src="https://zvetnoe.ru/upload/images/blog/063_Nastolnye_igry/1.jpg?text=Настолки" alt="Board Games">
+        <strong>Настольные игры</strong>
+        <p class="desc">Не манчкин, не манчкин, не манчкин.</p>
+      </div>
+      <div class="item">
+        <img src="https://hotoneaudio.oss-cn-shenzhen.aliyuncs.com/prod/default/U%20Picture%20For%20Page%204_New%20Product%20Introduction_Ampero%20Mini_V01_230529.1685440379045.jpg?text=Hontone+Ampero+Mini" alt="Hontone Ampero Mini">
+        <strong>Hontone Ampero Mini</strong>
+        <p class="desc">Для ультрабогатых друзей и ультрабогатых друзей ультрабогатых друзей</p>
+      </div>
+      <div class="item">
+        <img src="https://golos.ua/images/2022/01/v-dengah-1024x640.jpg?text=Деньги" alt="Деньги">
+        <strong>Деньги</strong>
+        <p class="desc">Всегда пригодятся, в любой валюте, в акциях, принимаю с благодарностью</p>
+      </div>
+      <div class="item">
+        <img src="https://img.joomcdn.net/d0b4b4fde7d89c42a3a4e6b9c00f29a1fc00f74a_1024_1024.jpeg?text=Curry+Jersey" alt="Curry Jersey">
+        <strong>Джерси Steph Curry</strong>
+        <p class="desc">Размер RU 48-50, можно оверсайз.</p>
+      </div>
+      <div class="item">
+        <img src="https://ic.pics.livejournal.com/pierobags/61098896/4862/4862_900.jpg?text=Кепка" alt="Cap">
+        <strong>Крутая кепка или сумка</strong>
+        <p class="desc">Любой яркий аксессуар, но только не такой смешной, а стильный, типа, на работу ходить или в Кофеманию.</p>
+      </div>
+      <div class="item">
+        <img src="https://dt7v1i9vyp3mf.cloudfront.net/styles/news_large/s3/imagelibrary/N/NovationLaunchkeyMkIII_01-g_zo_LHljM2041OBF1d_VcxwbmIyJCoK.jpg?text=Мидюха alt="Cap">
+        <strong>Мидюха</strong>
+        <p class="desc">Novation Launchkey или че-нибудь такое.</p>
+      </div>
+      <div class="item">
+        <img src="https://i.ytimg.com/vi/2QbQHSGsdgQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBh9UyZrFPdDDx722VEhm8RSANTkQ?text=Сюрприз" alt="Surprise">
+        <strong>Угарный Сюрприз</strong>
+        <p class="desc">ЛУЧШиЙ ПОДАРОК — ЧТО-ТО НЕОЖИДАННОЕ И ВЕСЁЛОЕ!!!!! 🎉</p>
+      </div>
+    </div>
+    <p class="note">P.S. Можно комбинировать<br> P.P.S. Можно не комбинировать <br> P.P.P.S. Можно вообще просто похавать принести <br> P.S.P.S.P. Но все же лучше чтобы я удивился сюрпризу</p>
+  </div>
+</body>
+</html>
